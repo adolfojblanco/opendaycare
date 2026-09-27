@@ -1,6 +1,6 @@
 # SPEC 01 — Feed estático como home (/)
 
-> **Status:** Aprobado
+> **Status:** Implementado
 > **Depends on:** ninguna
 > **Date:** 2026-09-27
 > **Objective:** Recrear `references/pantallas/feed.dc.html` como página home (`/`) con datos mock estáticos y fidelidad visual al mockup, sin auth ni base de datos.
@@ -67,18 +67,18 @@ export const posts: Post[] = [/* los 3 posts del mockup */];
 
 ## Acceptance criteria
 
-- [ ] `/` renderiza sin errores de consola con `npm run dev`.
-- [ ] Fondo general #F6ECDF; el modo oscuro por defecto de create-next-app fue eliminado.
-- [ ] `<html>` declara `lang="es"` y las fuentes activas son Nunito (cuerpo) y Fredoka (títulos) servidas por next/font.
-- [ ] El sidebar replica el mockup: logo OpenDayCare · Sala Soles, botón "Nueva publicación", Feed activo (#FBE3D8/#D9583C), Niños/Avisos/Mi cuenta inactivos, footer "Caro Giménez · Maestra · Soles" + logout.
-- [ ] Ningún enlace navega; no existen rutas nuevas más allá de `/`.
-- [ ] El encabezado muestra exactamente "GUARDERÍA · SALA SOLES", "Buenas, Caro" y "12 niños · martes 17 jun".
-- [ ] Los 3 posts provienen de `lib/mock-data.ts`: badges LOGRO (#CFEBD8/#3E9B6C), ACTIVIDAD (#C7E7F1/#2E89A6), ANUNCIO (#CCD8F4/#4E72C8); likes 3/5/8 y comentarios 1/2/0.
-- [ ] El post de ACTIVIDAD muestra el placeholder punteado "Foto · pintando con témperas".
-- [ ] Ningún archivo del feature declara `"use client"`.
-- [ ] `npm run lint` y `npx tsc --noEmit` pasan sin errores.
-- [ ] Todos los identificadores del código están en inglés y todos los textos visibles están en español.
-- [ ] Comparación visual lado a lado contra el mockup sin diferencias evidentes (espaciados, sombras, radios, gradientes).
+- [x] `/` renderiza sin errores de consola con `npm run dev`.
+- [x] Fondo general #F6ECDF; el modo oscuro por defecto de create-next-app fue eliminado.
+- [x] `<html>` declara `lang="es"` y las fuentes activas son Nunito (cuerpo) y Fredoka (títulos) servidas por next/font.
+- [x] El sidebar replica el mockup: logo OpenDayCare · Sala Soles, botón "Nueva publicación", Feed activo (#FBE3D8/#D9583C), Niños/Avisos/Mi cuenta inactivos, footer "Caro Giménez · Maestra · Soles" + logout.
+- [x] Ningún enlace navega; no existen rutas nuevas más allá de `/`.
+- [x] El encabezado muestra exactamente "GUARDERÍA · SALA SOLES", "Buenas, Caro" y "12 niños · martes 17 jun".
+- [x] Los 3 posts provienen de `lib/mock-data.ts`: badges LOGRO (#CFEBD8/#3E9B6C), ACTIVIDAD (#C7E7F1/#2E89A6), ANUNCIO (#CCD8F4/#4E72C8); likes 3/5/8 y comentarios 1/2/0.
+- [x] El post de ACTIVIDAD muestra el placeholder punteado "Foto · pintando con témperas".
+- [x] Ningún archivo del feature declara `"use client"`.
+- [x] `npm run lint` y `npx tsc --noEmit` pasan sin errores.
+- [x] Todos los identificadores del código están en inglés y todos los textos visibles están en español.
+- [x] Comparación visual lado a lado contra el mockup sin diferencias evidentes (espaciados, sombras, radios, gradientes).
 
 ## Decisions
 
