@@ -1,6 +1,6 @@
 # SPEC 01 — Feed estático como home (/)
 
-> **Status:** Implementado
+> **Status:** Verificado
 > **Depends on:** ninguna
 > **Date:** 2026-09-27
 > **Objective:** Recrear `references/pantallas/feed.dc.html` como página home (`/`) con datos mock estáticos y fidelidad visual al mockup, sin auth ni base de datos.
@@ -78,7 +78,8 @@ export const posts: Post[] = [/* los 3 posts del mockup */];
 - [x] Ningún archivo del feature declara `"use client"`.
 - [x] `npm run lint` y `npx tsc --noEmit` pasan sin errores.
 - [x] Todos los identificadores del código están en inglés y todos los textos visibles están en español.
-- [x] Comparación visual lado a lado contra el mockup sin diferencias evidentes (espaciados, sombras, radios, gradientes).
+- [x] Comparación visual lado a lado contra el mockup sin diferencias evidentes: fondo #F6ECDF, sidebar de 248px, tarjetas #FFFDF9 con radio 20px, borde #ECE0D0 y sombra `0 4px 16px -12px rgba(120,90,60,.5)`, gradientes del logo (#F8C3A8→#F2937A) y del botón (#F4977E→#EE8164).
+  *Nota: en `npm run dev` aparece el indicador de desarrollo de Next.js (círculo en la esquina inferior izquierda), que es un overlay del framework y no forma parte de la UI de la app.*
 
 ## Decisions
 
